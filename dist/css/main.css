@@ -99,7 +99,7 @@ body {
   color: #000;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -165,8 +165,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio'
- 'job1 job2 job3';
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -194,24 +193,19 @@ main {
   .projects .image {
     width: 100%;
     border: 3px solid #fff;
-    /* height: 167px; */
-    height: 225px;
+    height: 167px;
     background-position: center;
     background-size: cover; }
   .projects .item:nth-child(1) .image {
-    background-image: url("../img/retro-board.png"); }
+    background-image: url("../img/breaking-bad-app.jpg"); }
   .projects .item:nth-child(2) .image {
-    background-image: url("../img/multi-step-form.png"); }
-  .projects .item:nth-child(3) .image {
-    background-image: url("../img/truheart.png"); }
-  .projects .item:nth-child(4) .image {
-    background-image: url("../img/accordion.png"); }
-  .projects .item:nth-child(5) .image {
-    background-image: url("../img/drumkit.png"); }
-  .projects .item:nth-child(6) .image {
     background-image: url("../img/city-search.png"); }
-  .projects .item:nth-child(7) .image {
+  .projects .item:nth-child(3) .image {
+    background-image: url("../img/drumkit.png"); }
+  .projects .item:nth-child(4) .image {
     background-image: url("../img/clock.png"); }
+  .projects .item:nth-child(5) .image {
+    background-image: url(""); }
   .projects img {
     width: 100%;
     border: 3px solid #fff; }
@@ -304,11 +298,7 @@ main {
   .boxes div {
     font-size: 1.5em; }
   .about-info {
-    grid-template-areas: "bioimage"
- "bio"
- "job1"
- "job2"
- "job3";
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }

@@ -1,29 +1,29 @@
-// ***** NPM RUN SASS in terminal every time I make changes *****
+// ***** 'NPM RUN SASS' in terminal every time I make changes *****
 
 // MAIN SASS FILE
 // SASS needs to get compiled down to CSS - do this with Node SASS
 
-@import 'config';
-@import 'menu';
+@import "config";
+@import "menu";
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
 //Headings
 h1,
 h2,
-h3{
+h3 {
   margin: 0;
   font-weight: 400;
 
@@ -34,7 +34,10 @@ h3{
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5); //lightens primary color with a 0.5 opacity so we can see through it and make the background image visible.
+    background: rgba(
+      lighten($primary-color, 2),
+      0.5
+    ); //lightens primary color with a 0.5 opacity so we can see through it and make the background image visible.
   }
 }
 
@@ -87,8 +90,8 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
+    "bioimage bio bio"
+    "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -135,20 +138,24 @@ main {
     background-position: center;
     background-size: cover;
   }
-  .item:nth-child(1) .image{
-    background-image: url("../img/accordion.png");
+  // ideal image size: 1000x400px
+  // .item:nth-child(1) .image {
+  //   background-image: url("../img/multi-step-form.png");
+  // }
+  .item:nth-child(1) .image {
+    background-image: url("../img/breaking-bad-app.jpg");
   }
-  .item:nth-child(2) .image{
-    background-image: url("../img/calculator.png");
-  }
-  .item:nth-child(3) .image{
-    background-image: url("../img/drumkit.png");
-  }
-  .item:nth-child(4) .image{
+  .item:nth-child(2) .image {
     background-image: url("../img/city-search.png");
   }
-  .item:nth-child(5) .image{
+  .item:nth-child(3) .image {
+    background-image: url("../img/drumkit.png");
+  }
+  .item:nth-child(4) .image {
     background-image: url("../img/clock.png");
+  }
+  .item:nth-child(5) .image {
+    background-image: url("");
   }
 
   img {
@@ -221,7 +228,6 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
-
 }
 
-@import 'mobile'; //want media queries to run after the initial CSS.
+@import "mobile"; //want media queries to run after the initial CSS.
