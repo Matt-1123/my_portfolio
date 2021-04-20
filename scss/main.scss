@@ -139,23 +139,20 @@ main {
     background-size: cover;
   }
   // ideal image size: 1000x400px
-  // .item:nth-child(1) .image {
-  //   background-image: url("../img/multi-step-form.png");
-  // }
-  .item:nth-child(1) .image {
+  .university-lp .image {
+    background-image: url("../img/university-lp.jpg");
+  }
+  .characters-list .image {
     background-image: url("../img/breaking-bad-app.jpg");
   }
-  .item:nth-child(2) .image {
+  .city-finder .image {
     background-image: url("../img/city-search.png");
   }
-  .item:nth-child(3) .image {
+  .drumkit .image {
     background-image: url("../img/drumkit.png");
   }
-  .item:nth-child(4) .image {
+  .clock .image {
     background-image: url("../img/clock.png");
-  }
-  .item:nth-child(5) .image {
-    background-image: url("");
   }
 
   img {
