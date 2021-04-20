@@ -246,10 +246,16 @@ main#home h1 {
 }
 .projects .university-lp .image {
   background-image: url("../img/university-lp.jpg");
-  background-position: center;
 }
 .projects .wildfire-tracker .image {
   background-image: url("../img/wildfire-tracker.jpg");
+  background-position: top;
+}
+.projects .precision-sports .image {
+  background-image: url("../img/precisionsports.jpg");
+}
+.projects .bconny .image {
+  background-image: url("../img/bconny.jpg");
   background-position: top;
 }
 .projects .characters-list .image {
