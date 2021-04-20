@@ -246,6 +246,11 @@ main#home h1 {
 }
 .projects .university-lp .image {
   background-image: url("../img/university-lp.jpg");
+  background-position: center;
+}
+.projects .wildfire-tracker .image {
+  background-image: url("../img/wildfire-tracker.jpg");
+  background-position: top;
 }
 .projects .characters-list .image {
   background-image: url("../img/breaking-bad-app.jpg");
