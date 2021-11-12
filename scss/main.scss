@@ -139,6 +139,9 @@ main {
     background-size: cover;
   }
   // ideal image size: 1000x400px
+  .travel-green .image {
+    background-image: url('../img/travel-green.png')
+  }
   .university-lp .image {
     background-image: url("../img/university-lp.jpg");
   }
@@ -152,18 +155,6 @@ main {
   .bconny .image {
     background-image: url("../img/bconny.jpg");
     background-position: top;
-  }
-  .characters-list .image {
-    background-image: url("../img/breaking-bad-app.jpg");
-  }
-  .city-finder .image {
-    background-image: url("../img/city-search.png");
-  }
-  .drumkit .image {
-    background-image: url("../img/drumkit.png");
-  }
-  .clock .image {
-    background-image: url("../img/clock.png");
   }
 
   img {
