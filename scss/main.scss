@@ -180,12 +180,12 @@ main {
   div {
     font-size: 1.6rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2rem;
     margin-bottom: 3rem;
     @include easeOut;
 
     &:hover {
-      padding: 1rem 2rem;
+      padding: 1.2rem 2.4rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
 
