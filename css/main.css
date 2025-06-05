@@ -67,11 +67,12 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../img/code-brackets-colored.png");
+  background: url("../dist/img/code-brackets-colored.png");
   background-position: center;
-  background-size: cover;
+  background-size: 150px;
+  background-repeat: no-repeat;
   border-radius: 50%;
-  border: solid 3px #006400;
+  border: solid 3px #bfbfbf;
 }
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -370,6 +371,7 @@ main#home h1 {
   .menu-branding .portrait {
     width: 150px;
     height: 150px;
+    background-size: 80px;
   }
   .boxes div {
     font-size: 1.5em;
