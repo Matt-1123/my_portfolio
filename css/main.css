@@ -48,7 +48,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #bfbfbf;
+  background: rgb(191.25, 191.25, 191.25);
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -119,14 +119,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #ccc;
-  color: #000;
-  height: 100%;
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-}
 body#bg-img {
   background: url(../img/background.jpg);
   background-attachment: fixed;
@@ -141,6 +133,14 @@ body#bg-img::after {
   height: 100%;
   z-index: -1;
   background: rgba(204, 204, 204, 0.9);
+}
+body {
+  background: #ccc;
+  color: #000;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 
 h1,
@@ -159,7 +159,7 @@ h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(209, 209, 209, 0.5);
+  background: rgba(209.1, 209.1, 209.1, 0.5);
 }
 
 a {
@@ -228,7 +228,7 @@ main#home h1 {
   grid-area: job3;
 }
 .about-info .job {
-  background: #d9d9d9;
+  background: rgb(216.75, 216.75, 216.75);
   padding: 0.5rem;
   border-bottom: #006400 5px solid;
 }
@@ -307,7 +307,7 @@ main#home h1 {
 }
 
 .btn-dark {
-  background: #4d4d4d;
+  background: rgb(76.5, 76.5, 76.5);
   color: #fff;
 }
 
@@ -319,7 +319,7 @@ main#home h1 {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #b3b3b3;
+  background: rgb(178.5, 178.5, 178.5);
   color: #000;
   height: 60px;
 }
@@ -373,8 +373,9 @@ main#home h1 {
     height: 150px;
     background-size: 80px;
   }
-  .boxes div {
+  .boxes > div {
     font-size: 1.5em;
+    max-width: 100%;
   }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
@@ -387,5 +388,8 @@ main#home h1 {
 @media screen and (max-width: 500px) {
   .projects {
     grid-template-columns: 1fr;
+  }
+  .boxes > div {
+    font-size: 1.2em;
   }
 }

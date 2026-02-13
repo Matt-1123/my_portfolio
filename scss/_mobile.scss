@@ -59,8 +59,9 @@
     }
   }
 
-  .boxes div {
+  .boxes > div {
     font-size: 1.5em;
+    max-width: 100%;
   }
 
   .about-info {
@@ -82,5 +83,9 @@
 @include mediaSm {
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .boxes > div {
+    font-size: 1.2em;
   }
 }
