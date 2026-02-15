@@ -64,7 +64,7 @@
 .menu-branding.show {
   transform: translate3d(0, 0, 0);
 }
-.menu-branding .portrait {
+.menu-branding .mobile-logo {
   width: 250px;
   height: 250px;
   background: url("../dist/img/code-brackets-colored.png");
@@ -439,7 +439,7 @@ main#home h1 {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
   }
-  .menu-branding .portrait {
+  .menu-branding .mobile-logo {
     width: 150px;
     height: 150px;
     background-size: 80px;
