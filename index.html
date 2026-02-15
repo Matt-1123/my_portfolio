@@ -9,7 +9,8 @@
     <title>Home</title>
   </head>
   <body id="bg-img">
-    <header>
+    <!-- Mobile Menu Button -->
+    <header class="mobile-header">
       <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -17,18 +18,34 @@
       </div>
       <nav class="menu">
         <div class="menu-branding">
-          <div class="portrait"></div>
+          <div class="mobile-logo"></div>
         </div>
         <ul class="menu-nav">
           <li class="nav-item current">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="dist/work.html">My Work</a>
+            <a class="nav-link" href="dist/projects.html">My Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="dist/contact.html">Contact Me</a>
           </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Desktop Navigation -->
+    <header class="desktop-header">
+      <nav class="desktop-nav">
+        <!-- <div class="desktop-logo">
+          <span class="logo-text">MR</span>
+          <img src="./dist/img/code-brackets-colored.png" alt="" class="desktop-logo-img">
+        </div> -->
+        <img src="./dist/img/code-brackets-colored.png" alt="" class="desktop-logo">
+        <ul class="desktop-nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="dist/projects.html">My Projects</a></li>
+          <li><a href="dist/contact.html">Contact Me</a></li>
         </ul>
       </nav>
     </header>

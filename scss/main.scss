@@ -130,6 +130,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem;
+  margin-top: 2em;
 
   .image {
     width: 100%;

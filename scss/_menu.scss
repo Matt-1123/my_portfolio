@@ -135,3 +135,84 @@
     transition-delay: $x * 0.1s; // e.g. third nav-item will come in at 0.3s
   }
 }
+
+// Desktop Navigation
+.desktop-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 1rem 2rem;
+  display: none; // Hidden by default on mobile
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mobile-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  &-text {
+    color: set-text-color($primary-color);
+    padding: 0.5rem 1rem;
+    border: 2px solid $secondary-color;
+    border-radius: 4px;
+  }
+}
+
+.desktop-logo {
+  padding: 0.5rem 1rem;
+  width: 5em;
+}
+
+.desktop-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: set-text-color($primary-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+
+    &:hover,
+    &.active {
+      color: $secondary-color;
+      border-bottom-color: $secondary-color;
+    }
+  }
+}
+
+// Show desktop nav on larger screens
+@media screen and (min-width: 769px) {
+  .mobile-header {
+    display: none;
+  }
+  
+  .desktop-header {
+    display: block;
+  }
+}
+
+// Keep mobile menu visible on smaller screens
+@media screen and (max-width: 768px) {
+  .desktop-header {
+    display: none;
+  }
+  
+  .mobile-header {
+    display: block;
+  }
+}

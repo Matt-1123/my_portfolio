@@ -6,10 +6,11 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
-    <title>My Work</title>
+    <title>My Projects</title>
   </head>
   <body>
-    <header>
+    <!-- Mobile Menu Button -->
+    <header class="mobile-header">
       <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -17,14 +18,14 @@
       </div>
       <nav class="menu">
         <div class="menu-branding">
-          <div class="portrait"></div>
+          <div class="mobile-logo"></div>
         </div>
         <ul class="menu-nav">
           <li class="nav-item">
             <a class="nav-link" href="../index.html">Home</a>
           </li>
-          <li class="nav-item current">
-            <a class="nav-link" href="work.html">My Work</a>
+          <li class="nav-item">
+            <a class="nav-link current" href="projects.html">My Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Me</a>
@@ -33,18 +34,30 @@
       </nav>
     </header>
 
+    <!-- Desktop Navigation -->
+    <header class="desktop-header">
+      <nav class="desktop-nav">
+        <img src="./img/code-brackets-colored.png" alt="" class="desktop-logo">
+        <ul class="desktop-nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="projects.html" class="active">My Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main id="work">
       <h1 class="lg-heading">
         My
-        <span class="text-secondary">Work</span>
+        <span class="text-secondary">Projects</span>
       </h1>
-      <h2 class="sm-heading">Check out some of my projects...</h2>
+      <!-- <h2 class="sm-heading">My projects:</h2> -->
       <div class="projects">
         <div class="item project-earth-health">
           <div class="image" style="background-image: url('./img/Project-Earth-Health.png'); background-position: top;"></div>
           <a class="btn-light" href="https://www.projectearthhealth.com/" target="_blank">
             <i class="fas fa-eye"></i>
-            Project Earth Health (React app)
+            Project Earth Health (React, Node, Express, MySQL)
           </a>          
           <a class="btn-dark" href="https://github.com/Matt-1123/peh-ui" target="_blank">
             <i class="fab fa-github"></i>
